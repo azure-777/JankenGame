@@ -12,7 +12,7 @@ public class Panel {
 	public static JLabel contentsLabel;
 
 	public static void createPanel(JFrame frame) {
-	    // ヘッダーパネル
+	    //ヘッダーパネル
 	    Dimension headerPanelDimension = new Dimension(640, 50);
 	    JPanel headerPanel = setPanel(Color.BLACK, headerPanelDimension);
 	    headerLabel = new JLabel("「さあ、じゃんけんで勝負だ！」");
@@ -20,7 +20,7 @@ public class Panel {
 	    headerPanel.add(headerLabel);
 	    frame.add(headerPanel,BorderLayout.NORTH);
 
-	    // コンテンツパネル
+	    //コンテンツパネル
 	    Dimension contentsPanelDimension = new Dimension(640, 380);
 	    JPanel contentsPanel = setPanel(Color.WHITE, contentsPanelDimension);
 	    contentsLabel = new JLabel("じゃんけん");
@@ -28,7 +28,7 @@ public class Panel {
 	    contentsPanel.add(contentsLabel);
 	    frame.add(contentsPanel,BorderLayout.CENTER);
 
-	    // フッタパネル
+	    //フッタパネル
 	    Dimension footerPanelDimension = new Dimension(640, 50);
 	    JPanel footerPanel = setPanel(Color.BLACK, footerPanelDimension);
 	    Player.createButton(footerPanel);

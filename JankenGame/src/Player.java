@@ -9,7 +9,7 @@ import javax.swing.JPanel;
 
 public class Player implements ActionListener {
 	public static void createButton(JPanel footerPanel) {
-		// ボタンの表示
+		//ボタンの表示
 	    JButton btnGu = new JButton("グー");
 	    btnGu = setButton(btnGu);
 	    footerPanel.add(btnGu, BorderLayout.WEST);
